@@ -11,7 +11,10 @@
   },
   "author": "Coder Park",
   "dependencies": {
-    "express": "^4.21.1"
+    "express": "^4.21.1",
+    "jose": "^5.9.6",
+    "jwks-rsa": "^3.1.0",
+    "zod": "^3.23.8"
   },
   "devDependencies": {
     "@types/express": "^5.0.0",
