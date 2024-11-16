@@ -1,17 +1,12 @@
-export default class User {
-  public id: string = '';
+import { z } from 'zod';
 
-  public externalId: string = '';
+export const UserSchema = z.object({
+  id: z.string(),
+  userName: z.string(),
+  firstName: z.string(),
+  familyName: z.string(),
+  email: z.string(),
+  createdDate: z.date(),
+});
 
-  public thirdPartyId: string = '';
-
-  public userName: string = '';
-
-  public firstName: string = '';
-
-  public familyName: string = '';
-
-  public email: string = '';
-
-  public createdDate: number = Date.now();
-}
+export type User = z.infer<typeof UserSchema>;

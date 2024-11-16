@@ -10,5 +10,6 @@
         "ecmaVersion": "latest",
         "sourceType": "module",
         "project": "./tsconfig.json"
-    }
+    },
+    "ignorePatterns": ["node_modules/", "src/data/migrations/"]
 }
