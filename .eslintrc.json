@@ -11,5 +11,5 @@
         "sourceType": "module",
         "project": "./tsconfig.json"
     },
-    "ignorePatterns": ["node_modules/", "src/data/migrations/"]
+    "ignorePatterns": ["node_modules/", "dist/", "src/data/migrations/"]
 }
