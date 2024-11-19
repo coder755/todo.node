@@ -1,3 +1,4 @@
+import { v7 as uuidv7 } from 'uuid';
 import UserEntity from '../data/entity/User';
 import { userRepository } from '../data';
 import { User as UserModel } from '../models/User';
@@ -8,8 +9,9 @@ const convertUuidToBinary = (uuid: string) => Buffer.from(uuid.replace(/-/g, '')
 
 const userRequestToEntity = (req: PostUserRequest) => {
   const entity = new UserEntity();
-  entity.Id = convertUuidToBinary(req.id);
-  entity.ExternalId = req.id;
+  const id = uuidv7();
+  entity.Id = convertUuidToBinary(id);
+  entity.ExternalId = id;
   entity.UserName = req.userName;
   entity.FirstName = req.firstName;
   entity.FamilyName = req.familyName;

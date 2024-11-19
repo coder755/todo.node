@@ -1,7 +1,7 @@
 {
-  "name": "todo.notification",
+  "name": "todo.node",
   "version": "1.0.0",
-  "description": "Node service for emitting notifications to appropriate EC2 instances",
+  "description": "Node service for Todo Application",
   "main": "dist/index.js",
   "scripts": {
     "build": "tsc",
@@ -21,7 +21,7 @@
     "mysql2": "^3.11.4",
     "reflect-metadata": "^0.2.2",
     "typeorm": "^0.3.20",
-    "uuid": "^11.0.2",
+    "uuid": "^11.0.3",
     "zod": "^3.23.8"
   },
   "devDependencies": {

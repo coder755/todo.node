@@ -4,6 +4,9 @@ import JWKDoesNotExistError from '../error/JWKDoesNotExistError';
 
 const hoursToMilliSec = (hours: number) => hours * 60 * 60 * 1000;
 
+/**
+ * Cache for storing JWKs when using a thirdparty auth service like Cognito
+ */
 export default class JwkCache {
   private cachedKeys: JWK[] = [];
 
