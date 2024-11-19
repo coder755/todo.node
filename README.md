@@ -6,6 +6,7 @@ Use Powershell for `nodemon --watch` to work
 
 # Expected Flow
 *** The JWT Secret is created at start time. You will need to create a JWT each time you restart the application.
+
 1 - Post a user via  https://localhost:3000/admin/user with following body template:
 `{
     "userName": "best",
