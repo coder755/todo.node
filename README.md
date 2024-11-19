@@ -15,6 +15,6 @@ Use Powershell for `nodemon --watch` to work
     "email": "123@123.com"
 }`
 
-2 - Get a user token via http://localhost:3000/admin/token?userid=`${userId returned from previous request}`
+2 - Get a user token via http://localhost:3000/admin/token?userid=${userId}
 
 3 - Get user information via http://localhost:3000/user using returned token from previous request in the authorization header as a 'Bearer' token.
